@@ -1,0 +1,51 @@
+/////////////////////////////////////////////////////////
+// Damage - Static Starter Base CSS                    //
+/////////////////////////////////////////////////////////
+
+// SASS-UTILS
+
+// RESET
+@import 'reboot/reboot';
+
+// BASE
+//// Grid System
+//@import "base/grid";
+//// Color utiities
+//@import "base/color";
+//// Typography
+//@import "base/type";
+//// Iconography
+//@import "base/icons";
+//// Brand / Logos
+//@import "base/brand";
+
+// COMPONENTS
+//// Reusable components
+//@import "components/components";
+
+// PAGES
+//// Page specific overides
+//@import "pages/pages";
+
+// Visability hacks
+//// Responsive embeds for video/iframes, i.e youtube/vimeo
+//@import "helpers/responsive-embed";
+//// Helpers for screen size based tasks, like show/hide
+//@import "helpers/responsive-utilities";
+
+.center {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	svg {
+		height: 140px;
+		width: auto;
+
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}
